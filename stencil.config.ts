@@ -1,14 +1,15 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
+import { postcss } from '@stencil/postcss';
+import autoprefixer from 'autoprefixer';
 
 export const config: Config = {
   namespace: 'silkscreen-stencil',
+  globalStyle: 'src/global/main.scss',
   outputTargets: [
     {
       type: 'dist',
       esmLoaderPath: '../loader',
-    },
-    {
-      type: 'dist-custom-elements-bundle',
     },
     {
       type: 'docs-readme',
@@ -18,4 +19,5 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
+  plugins: [sass(), postcss({ plugins: [autoprefixer()] })],
 };

@@ -1,0 +1,63 @@
+/**
+ * Do not edit directly
+ * Generated on Wed, 17 Feb 2021 15:42:18 GMT
+ */
+
+export const coolGrey100 = "#f2f3f8";
+export const coolGrey200 = "#e3e5ea";
+export const coolGrey300 = "#caccd1";
+export const coolGrey400 = "#b0b2b7";
+export const coolGrey500 = "#97999e";
+export const coolGrey600 = "#7e8085";
+export const coolGrey700 = "#64666b";
+export const coolGrey800 = "#4b4d52";
+export const coolGrey900 = "#313338";
+export const coolGrey1000 = "#181a1f";
+export const issuuOrange200 = "#ffdeda";
+export const issuuOrange300 = "#ffbdb5";
+export const issuuOrange400 = "#ff9c91";
+export const issuuOrange500 = "#ff7b6c";
+export const issuuOrange600 = "#ff5a47";
+export const issuuOrange700 = "#cc4839";
+export const issuuOrange800 = "#99362b";
+export const issuuOrange900 = "#66241c";
+export const issuuOrange1000 = "#33120e";
+export const white500 = "#ffffff";
+export const warmGrey300 = "#cccccc";
+export const warmGrey400 = "#b2b2b2";
+export const warmGrey600 = "#808080";
+export const warmGrey700 = "#666666";
+export const warmGrey800 = "#4d4d4d";
+export const warmGrey900 = "#333333";
+export const warmGrey1000 = "#1a1a1a";
+export const warmGreyIssuuBlack = "#000000";
+export const whalesTale100 = "#f5f5ff";
+export const whalesTale200 = "#e5e5fe";
+export const whalesTale300 = "#d7d7ff";
+export const whalesTale400 = "#b9b8fd";
+export const whalesTale500 = "#9b9afc";
+export const whalesTale600 = "#7c7af0";
+export const whalesTale700 = "#5f5de4";
+export const whalesTale800 = "#4b4aa1";
+export const whalesTale900 = "#363565";
+export const whalesTale1000 = "#1b1b33";
+export const butterflysStory100 = "#fdf5fe";
+export const butterflysStory200 = "#f6d9fb";
+export const butterflysStory300 = "#efbcf8";
+export const butterflysStory400 = "#e89ff5";
+export const butterflysStory500 = "#cd7fdb";
+export const butterflysStory600 = "#b463c2";
+export const butterflysStory700 = "#9b4ca8";
+export const butterflysStory800 = "#783c82";
+export const butterflysStory900 = "#552c5c";
+export const butterflysStory1000 = "#221225";
+export const swiftsNewsFlash100 = "#f2ffbb";
+export const swiftsNewsFlash200 = "#e4ff77";
+export const swiftsNewsFlash300 = "#cde861";
+export const swiftsNewsFlash400 = "#b5d143";
+export const swiftsNewsFlash500 = "#9db53a";
+export const swiftsNewsFlash600 = "#859931";
+export const swiftsNewsFlash700 = "#6d7d28";
+export const swiftsNewsFlash800 = "#515e1e";
+export const swiftsNewsFlash900 = "#374014";
+export const swiftsNewsFlash1000 = "#1a1f0a";

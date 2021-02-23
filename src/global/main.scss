@@ -1,0 +1,47 @@
+@use '../../tokens/scss/tokens';
+
+:root {
+  box-sizing: border-box;
+  font: {
+    family: sans-serif;
+    size: 1.25rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: max-content;
+  padding: 0 max(1rem, 5vw);
+  margin: 0 auto;
+}
+
+hr {
+  margin-block: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+hr {
+  max-width: 80ch;
+}
+
+hr {
+  margin-inline: 0;
+}
+
+code {
+  padding: 0.125em 0.25em;
+  background-color: scale-color($color: #000, $lightness: 95%);
+  border-radius: 0.25em;
+}

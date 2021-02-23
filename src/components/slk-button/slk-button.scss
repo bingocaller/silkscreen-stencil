@@ -1,0 +1,61 @@
+@use '../../../tokens/scss/tokens';
+@use '../../shared/base-button';
+
+.button {
+  @extend %button;
+}
+
+.button--primary {
+  @extend %button--primary;
+}
+
+.button--secondary {
+  background-color: tokens.$whales-tale-600;
+  color: tokens.$white-500;
+
+  &:focus:enabled {
+    background-color: tokens.$whales-tale-800;
+  }
+
+  &:hover:not(:focus):enabled {
+    background-color: tokens.$whales-tale-700;
+  }
+}
+
+.button--tertiary {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 0.125em tokens.$cool-grey-300;
+  color: tokens.$cool-grey-800;
+
+  &:focus:enabled {
+    background-color: tokens.$issuu-orange-600;
+    color: tokens.$white-500;
+  }
+
+  &:hover:not(:focus):enabled {
+    box-shadow: inset 0 0 0 0.125em tokens.$warm-grey-700;
+  }
+}
+
+.button--ghost {
+  @extend %button--ghost;
+}
+
+.button--loading {
+  @extend %button--loading;
+}
+
+.button__icon,
+::slotted([slot^='icon']) {
+  @extend %button__icon;
+}
+
+.button__icon--left,
+::slotted([slot='icon-left']) {
+  @extend %button__icon--left;
+}
+
+.button__icon--right,
+::slotted([slot='icon-right']) {
+  @extend %button__icon--right;
+}

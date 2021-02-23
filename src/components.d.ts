@@ -20,6 +20,38 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface SlkButton {
+        /**
+          * Used to show feedback to the user. This will determine which icon is shown inside the button.
+         */
+        "feedbackState"?: 'loading' | 'done' | 'error';
+        /**
+          * Used to show feedback to the user. This will determine which icon is shown inside the button.
+         */
+        "iconPlacement"?: 'left' | 'right';
+        /**
+          * How will the button be used?
+         */
+        "role": 'primary' | 'secondary' | 'tertiary' | 'ghost';
+    }
+    interface SlkIconCheck {
+        /**
+          * How big should the icon be? Supports numbers (will translate to pixels) and strings, e.g. for relative units.
+         */
+        "size"?: number | string;
+    }
+    interface SlkIconClose {
+        /**
+          * How big should the icon be? Supports numbers (will translate to pixels) and strings, e.g. for relative units.
+         */
+        "size"?: number | string;
+    }
+    interface SlkIconLoading {
+        /**
+          * How big should the icon be? Supports numbers (will translate to pixels) and strings, e.g. for relative units.
+         */
+        "size"?: number | string;
+    }
 }
 declare global {
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
@@ -28,8 +60,36 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLSlkButtonElement extends Components.SlkButton, HTMLStencilElement {
+    }
+    var HTMLSlkButtonElement: {
+        prototype: HTMLSlkButtonElement;
+        new (): HTMLSlkButtonElement;
+    };
+    interface HTMLSlkIconCheckElement extends Components.SlkIconCheck, HTMLStencilElement {
+    }
+    var HTMLSlkIconCheckElement: {
+        prototype: HTMLSlkIconCheckElement;
+        new (): HTMLSlkIconCheckElement;
+    };
+    interface HTMLSlkIconCloseElement extends Components.SlkIconClose, HTMLStencilElement {
+    }
+    var HTMLSlkIconCloseElement: {
+        prototype: HTMLSlkIconCloseElement;
+        new (): HTMLSlkIconCloseElement;
+    };
+    interface HTMLSlkIconLoadingElement extends Components.SlkIconLoading, HTMLStencilElement {
+    }
+    var HTMLSlkIconLoadingElement: {
+        prototype: HTMLSlkIconLoadingElement;
+        new (): HTMLSlkIconLoadingElement;
+    };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
+        "slk-button": HTMLSlkButtonElement;
+        "slk-icon-check": HTMLSlkIconCheckElement;
+        "slk-icon-close": HTMLSlkIconCloseElement;
+        "slk-icon-loading": HTMLSlkIconLoadingElement;
     }
 }
 declare namespace LocalJSX {
@@ -47,8 +107,44 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface SlkButton {
+        /**
+          * Used to show feedback to the user. This will determine which icon is shown inside the button.
+         */
+        "feedbackState"?: 'loading' | 'done' | 'error';
+        /**
+          * Used to show feedback to the user. This will determine which icon is shown inside the button.
+         */
+        "iconPlacement"?: 'left' | 'right';
+        /**
+          * How will the button be used?
+         */
+        "role"?: 'primary' | 'secondary' | 'tertiary' | 'ghost';
+    }
+    interface SlkIconCheck {
+        /**
+          * How big should the icon be? Supports numbers (will translate to pixels) and strings, e.g. for relative units.
+         */
+        "size"?: number | string;
+    }
+    interface SlkIconClose {
+        /**
+          * How big should the icon be? Supports numbers (will translate to pixels) and strings, e.g. for relative units.
+         */
+        "size"?: number | string;
+    }
+    interface SlkIconLoading {
+        /**
+          * How big should the icon be? Supports numbers (will translate to pixels) and strings, e.g. for relative units.
+         */
+        "size"?: number | string;
+    }
     interface IntrinsicElements {
         "my-component": MyComponent;
+        "slk-button": SlkButton;
+        "slk-icon-check": SlkIconCheck;
+        "slk-icon-close": SlkIconClose;
+        "slk-icon-loading": SlkIconLoading;
     }
 }
 export { LocalJSX as JSX };
@@ -56,6 +152,10 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "slk-button": LocalJSX.SlkButton & JSXBase.HTMLAttributes<HTMLSlkButtonElement>;
+            "slk-icon-check": LocalJSX.SlkIconCheck & JSXBase.HTMLAttributes<HTMLSlkIconCheckElement>;
+            "slk-icon-close": LocalJSX.SlkIconClose & JSXBase.HTMLAttributes<HTMLSlkIconCloseElement>;
+            "slk-icon-loading": LocalJSX.SlkIconLoading & JSXBase.HTMLAttributes<HTMLSlkIconLoadingElement>;
         }
     }
 }

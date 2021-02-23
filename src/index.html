@@ -4,11 +4,42 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
     <title>Stencil Component Starter</title>
+    <link rel="stylesheet" href="/build/silkscreen-stencil.css">
 
     <script type="module" src="/build/silkscreen-stencil.esm.js"></script>
     <script nomodule src="/build/silkscreen-stencil.js"></script>
   </head>
   <body>
-    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+    <h1>Hello, world! This is Stencil!</h1>
+    <p>Now, this here's a <code>&lt;slk-button&gt;</code> (pronounced "silk button"):</p>
+    <slk-button feedback-state="loading" role="primary">Primary</slk-button>
+    <p>
+      It's a Web Component that uses Shadow DOM so it is entirely independent
+      from the rest of the DOM, which means all styles are automatically scoped
+      to the component, i.e. encapsulated.
+    </p>
+    <p>Here are a couple more examples.</p>
+    <slk-button feedback-state="done" role="secondary">Secondary</slk-button>
+    <ul>
+      <li>Feedback state: done</li>
+      <li>Role: secondary</li >
+    </ul>
+    <hr>
+    <slk-button role="tertiary" icon-placement="right" feedback-state="error">Tertiary</slk-button>
+    <ul>
+      <li>Feedback state: error</li>
+      <li>Role: tertiary</li >
+      <li>Icon placement: right</li >
+    </ul>
+    <hr>
+    <slk-button role="ghost" icon-placement="right">
+      Gost <slk-icon-close slot="icon-right" />
+    </slk-button>
+    <ul>
+      <li>No feedback state</li>
+      <li>Role: ghost</li >
+      <li>Icon placement: right</li >
+      <li><code>&lt;slk-icon-close slot="icon-right"&gt;</code> as child alongside text content
+    </ul>
   </body>
 </html>
